@@ -1,5 +1,5 @@
 {
-  "VATNumber": "123456789",
+  "VATNumber": "801252186",
   "WorkBookPath": "C:\\VAT",
   "WorkSheetName": "Journal",
   "SalesVATCell": "E9",
@@ -12,12 +12,12 @@
   "SubmissionReportPath": "C:\\VAT",
   "LogFilePath": "C:\\VAT",
   "AuthCode": "",
-  "State": "SP0OOGIW6GAYSL1D4IZPZKUTPINFQB8OE1CV",
-  "AccessToken": "f1b6616b535ffdeaef1ef00003d07dd9",
-  "RefreshToken": "0c244d4604e74135802d4e94de1fdc3e",
+  "State": "CUIU51S9E89GUR4NE2MIP1DRMCPF7LVH3XO0",
+  "AccessToken": "6fed2725b696716b86862b52852ba323",
+  "RefreshToken": "b96f1c07509dee8898fd10937f418318",
   "Scope": "read:vat write:vat",
-  "Expiry": "03-May-2023 18:54:41",
-  "DeviceID": "",
+  "Expiry": "30-Jan-2021 21:12:04",
+  "DeviceID": "6A747362-3833-3774-6831-65766D753734",
   "RedirectURL": "urn:ietf:wg:oauth:2.0:oob",
   "Test": false
 }
