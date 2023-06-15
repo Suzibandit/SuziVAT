@@ -1,0 +1,98 @@
+
+How to Install and Run SuziVAT.
+===============================
+
+1. Place the following files in a suitable folder. C:\VAT would be one choice.
+      SuziVAT.exe
+      settings.json
+      Newtonsoft.Json.dll
+
+2. Consider making a Shortcut for your Desktop for SuziVAT.exe
+
+3. Open settings.json and set values as follows
+
+      VATNumber              Your VAT Number
+      WorkBookPath           Path to SpreadSheet for File Picker       
+      WorkSheetName          WorkSheet Name         
+      SalesVATCell           Spreadsheet Cell for Sales VAT
+      PurchaseVATCell        Spreadsheet Cell for Purchases VAT
+      SalesTurnoverCell      Spreadsheet Cell for Sales Turnover
+      PurchaseTurnoverCell   Spreadsheet Cell for Purchases Turnover
+      VATReturnDateCell      Spreadsheet Cell for end date of VAT Return       
+      CompanyYearEndDate     Set to dd-mmm as in 31-Mar, used to drive sub folder picking
+      UseCompanyYearFolder   Set to true or false. true for File Picker sub folders
+      SubmissionReportPath   Where you want your Submission Reports to be filed      
+      LogFilePath            Where you want your detailed Log file to be saved
+      AuthCode               Leave as is
+      State                  Leave as is
+      AccessToken            Leave as is
+      RefreshToken           Leave as is
+      Scope                  Leave as is
+      Expiry                 Leave as is         
+      RedirectURL            Leave as is
+      BaseURL                Leave as is
+
+Notes
+
+The program will bring up a File Picker to allow you to choose the SpreadSheet file. The path where the File Picker starts is specified in WorkBookPath.
+
+If you set a value in VATReturnDateCell then the program will check that the value in the Spreadsheet Cell matches the end date of the Return you are submitting. This is a useful check against picking the wrong Spreadsheet.
+
+If you set CompanyYearEndDate and UseCompanyYearFolder then the program will calculate your Company Year (eg 2019-2020) and start the File Picker in that sub folder below WorkBookPath.
+
+When the Return is successfully submitted HMRC returns a small amount of information that you can use with them in the event of any queries. SubmissionReportPath is where this will be filed. If SubmissionReportPath is blank then this information will be lost.
+
+LogFilePath is where a detailed log of all the comms with HMRC is kept for debugging.
+
+WorkBookPath, SubmissionReportPath and LogFilePath can all be the same.
+
+
+Getting your Authorisation Code
+===============================
+
+The first thing you have to do is to get your Authorisation Code. The Progam can then use this to prove to HMRC that you have given your permission for the program to Read and Write your VAT data. It does this by requesting an Access Token.
+
+Once the program is started you need to click on "Get Authorisation Code". This will launch your Browser to the HMRC Web Site.
+
+HMRC web Site will prompt you to Logon with your Government Gateway credentials and to Authorise the SuziVAT program to be able to Read and Write your VAT data.
+
+Once you have done this HMRC will show a page with your Authorisation Code. Click on the "Copy" button to copy this to your clipboard.
+
+Go back to your SuziVAT program and paste this value into the "Auth Code" field.
+
+An Authorisation code lasts for 18 months although access can be revoked by the User on the HMRC web site.
+
+
+Running SuziVAT
+===============
+
+1. Launch the program.
+2. You will be shown a screen of informtion that HMRC requires the program to collect and send to them.
+3. Get an Authorisation Code if needed.
+4. Once an Authorisation Code has been obtained click on "Get Access Token".
+5. Click on "Get Obligations" to get a list of outstanding VAT Returns from HMRC.
+6. Choose one (there probably will only be one)
+7. Click on "Get VAT Figures" to start the File Picker.
+8. Choose your spreadsheet. The program will fill in the VAT values.
+9. Click on "Calculate" to work out the VAT due. Check that this is right.
+10. Click on "Submit VAT Return". This will bring up a dialogue box so you can carry out a last check of your figures.
+11. Click on OK. You should get a confirmation that the return has been submitted.
+
+Notes
+
+Once you have a Refresh Token you can click "Refresh Access Token" to get a new one even if the Access Token has expired.
+
+You can only click on "Get Access Token" once for each Authorisation Code.
+
+Fraud Prevetion Data
+====================
+
+HMRC mandates that the program must collect various items of data and send them in with each submission.
+
+The program shows you the data it has collected. At this point you can choose to continue or to exit the program.
+
+
+This program is free and is offered for you to use at your risk.
+
+Peter Norris
+Suzi Bandit Ltd.
