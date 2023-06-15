@@ -12,12 +12,12 @@
   "SubmissionReportPath": "C:\\VAT",
   "LogFilePath": "C:\\VAT",
   "AuthCode": "",
-  "State": "CUIU51S9E89GUR4NE2MIP1DRMCPF7LVH3XO0",
+  "State": "860ILUHGLDSLCMZC16HGQ22KG37JDBISOO4T",
   "AccessToken": "6fed2725b696716b86862b52852ba323",
   "RefreshToken": "b96f1c07509dee8898fd10937f418318",
   "Scope": "read:vat write:vat",
   "Expiry": "30-Jan-2021 21:12:04",
-  "DeviceID": "6A747362-3833-3774-6831-65766D753734",
+  "DeviceID": "",
   "RedirectURL": "urn:ietf:wg:oauth:2.0:oob",
   "Test": false
 }
