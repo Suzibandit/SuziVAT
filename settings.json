@@ -1,9 +1,5 @@
 {
-  "VATNumber": "222645385",
-  "BaseURL": "https://api.service.hmrc.gov.uk",
-  "RedirectURL": "https://suzibandit.ltd.uk/Suzi-VAT/redirected.asp",
-  "ClientID": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-  "ClientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "VATNumber": "123456789",
   "WorkBookPath": "C:\\VAT",
   "WorkSheetName": "Journal",
   "SalesVATCell": "E9",
@@ -14,12 +10,14 @@
   "CompanyYearEndDate": "31-Mar",
   "UseCompanyYearFolder": true,
   "SubmissionReportPath": "C:\\VAT",
-  "LogFilePath": "C:\\VAT\\LogFiles",
-  "BrowserPath": "chrome.exe",
-  "AuthCode": "2a3d05590949412ab53ee89a253bb80b",
-  "State": "0GXIA9AI9RLX9X3G0N69E682GG8KKPSE2OR5",
-  "AccessToken": "f06bfc7ae1d8a767dd54608cffa0741d",
-  "RefreshToken": "d381e30d1d65a93f27bdbc4eb80ce47",
+  "LogFilePath": "C:\\VAT",
+  "AuthCode": "",
+  "State": "SP0OOGIW6GAYSL1D4IZPZKUTPINFQB8OE1CV",
+  "AccessToken": "f1b6616b535ffdeaef1ef00003d07dd9",
+  "RefreshToken": "0c244d4604e74135802d4e94de1fdc3e",
   "Scope": "read:vat write:vat",
-  "Expiry": "24-Jun-2019 19:09:50"
+  "Expiry": "03-May-2023 18:54:41",
+  "DeviceID": "",
+  "RedirectURL": "urn:ietf:wg:oauth:2.0:oob",
+  "Test": false
 }
