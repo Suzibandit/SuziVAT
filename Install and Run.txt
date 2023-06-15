@@ -29,8 +29,9 @@ How to Install and Run SuziVAT.
       RefreshToken           Leave as is
       Scope                  Leave as is
       Expiry                 Leave as is         
+      DeviceID               Leave as is (should initially be blank)
       RedirectURL            Leave as is
-      BaseURL                Leave as is
+      Test                   Leave as is (should be false)
 
 Notes
 
