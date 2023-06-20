@@ -181,6 +181,15 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetPath)"  "$(SolutionDir).."</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetPath)"  "$(SolutionDir).."
+
+powershell.exe -command "&amp; {&amp;'compress-archive' -Force -Path '$(TargetPath)','$(SolutionDir)..\Newtonsoft.Json.dll','$(SolutionDir)..\settings.json','$(SolutionDir)..\Install and Run.txt' -DestinationPath '$(SolutionDir)..\SuziVat.zip'}"
+
+powershell.exe -command "&amp; {&amp;'Get-FileHash' -Path '$(TargetPath)' -Algorithm SHA256 | Select Algorithm,Hash | fl * | Out-File '$(SolutionDir)..\Hash.txt'}"
+powershell.exe -command "&amp; {' ' | Out-File '$(SolutionDir)..\Hash.txt' -Append}"
+powershell.exe -command "&amp; {&amp;'Get-FileHash' -Path '$(TargetPath)' -Algorithm MD5 | Select Algorithm,Hash | fl * | Out-File '$(SolutionDir)..\Hash.txt' -Append}"
+powershell.exe -command "&amp; {$a = gc '$(SolutionDir)..\Hash.txt' | ? {$_ -ne ''}; $a | sc '$(SolutionDir)..\Hash.txt'}"
+
+powershell.exe -command "&amp; {type '$(SolutionDir)..\Hash.txt'}"</PostBuildEvent>
   </PropertyGroup>
 </Project>

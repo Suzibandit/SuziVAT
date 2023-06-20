@@ -15,7 +15,7 @@ namespace SuziVAT
 {
     static class Program
     {
-        public static string strVersion = "v1.3";
+        public static string strVersion = "v1.4";
 
         private static StreamWriter swLogFile = null;
         private static string strLogFolder = "";
