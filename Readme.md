@@ -12,3 +12,5 @@ Provided free, as is with no warranties, support or guarantee of any kind.
 Suitable for small businesses and sole traders with simple VAT Submission needs.
 
 Please see file "Install and Run.txt" for details of how to install and run this program.
+
+For latest release and more information please see https://suzibandit.ltd.uk/suzivat/
