@@ -394,7 +394,7 @@ namespace SuziVAT
 
             if (!Directory.Exists(ExcelFolderPath))
             {
-                MessageBox.Show("Folder " + ExcelFolderPath + " does not exist", "Missing Folder Error");
+                MessageBox.Show("Folder " + ExcelFolderPath + " does not exist, please create", "Missing Folder Error");
                 return;
             }
 
